@@ -9,7 +9,7 @@ function playAudio(e){
     audio.currentTime=0;
 }
 
-function pressAnimation(e){
+function playAnimation(e){
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
     key.classList.add(PLAYING);
     
@@ -18,5 +18,5 @@ function pressAnimation(e){
 const PLAYING = "playing";
 const keys = document.querySelectorAll(".key");
 keys.forEach(key => key.addEventListener('transitionend',removeAnimation));
-window.addEventListener("keydown", pressAnimation);
+window.addEventListener("keydown", playAnimation);
 window.addEventListener("keydown", playAudio);
