@@ -1,6 +1,5 @@
 function removeAnimation(e){
-    if(e.propertyName !== 'transform') return;
-    e.target.classList.remove(PLAYING);
+    this.classList.remove(PLAYING);
 }
 
 function playAudio(e){

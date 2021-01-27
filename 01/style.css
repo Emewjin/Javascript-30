@@ -44,7 +44,7 @@ header {
   justify-content: center;
   font-size: 30px;
   border-radius: 10px;
-  transition: all 0.07s ease;
+  transition: all 0.1s ease;
 }
 
 span {
