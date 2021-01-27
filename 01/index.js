@@ -1,4 +1,4 @@
-function removeAnimation(e){
+function removeAnimation(){
     this.classList.remove(PLAYING);
 }
 
