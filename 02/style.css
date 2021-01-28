@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "LAB디지털";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "LAB디지털";
+  background-color: navy;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.digital-clock {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.clock {
+  width: 350px;
+  height: 350px;
+  border: white 20px solid;
+  border-radius: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+.handle {
+  width: 170px;
+  height: 5px;
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.second-handle {
+  height: 1px;
+}
+
+.hour-handle {
+  height: 10px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  right: 52%;
+}
+
+.middle {
+  background-color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 48%;
+  right: 48%;
+}
