@@ -1,0 +1,42 @@
+body {
+  box-sizing: border-box;
+  background-color: #ffc600;
+  display: flex;
+  justify-content: center;
+}
+
+.inbox {
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 10px;
+  width: 600px;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  font-size: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.item input {
+  width: 20px;
+  height: 20px;
+  justify-content: flex-start;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+p {
+  margin: 0;
+  padding: 30px;
+  flex: 1;
+  border-left: 1px solid powderblue;
+}
+
+input:checked + p {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-top-right-radius: 10px;
+  text-decoration: line-through;
+}
